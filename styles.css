@@ -866,3 +866,184 @@ a:hover {
   }
 
 }
+
+
+/* =========================================================
+   TIMELINESS / WORKSHOP SCHEDULE
+   ========================================================= */
+
+.schedule-table-wrapper {
+  margin-top: 1.4rem;
+  width: 100%;
+  overflow-x: auto;
+
+  border: 1px solid var(--border);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.schedule-table {
+  width: 100%;
+  min-width: 900px;
+
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  color: var(--text);
+}
+
+.schedule-table th {
+  padding: 1rem 1.1rem;
+
+  text-align: left;
+  vertical-align: middle;
+
+  color: #ffffff;
+
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  background: rgba(255, 255, 255, 0.09);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.schedule-table th:first-child {
+  width: 14%;
+}
+
+.schedule-table th:nth-child(2) {
+  width: 43%;
+}
+
+.schedule-table th:nth-child(3) {
+  width: 43%;
+}
+
+.schedule-table td {
+  padding: 1rem 1.1rem;
+
+  vertical-align: top;
+
+  color: rgba(255, 255, 255, 0.78);
+
+  font-size: 0.91rem;
+  line-height: 1.55;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.schedule-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.schedule-table tbody tr {
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.schedule-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.schedule-table td strong {
+  color: rgba(255, 255, 255, 0.96);
+  font-weight: 600;
+}
+
+.schedule-time {
+  color: var(--accent-2) !important;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Invited talks */
+
+.invited-row {
+  background: rgba(127, 183, 255, 0.045);
+}
+
+/* Breaks */
+
+.break-row {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.break-row td {
+  color: rgba(255, 255, 255, 0.56);
+}
+
+/* Quantum session */
+
+.quantum-row {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(163, 125, 255, 0.10),
+      rgba(163, 125, 255, 0.025)
+    );
+}
+
+/* Panel */
+
+.panel-row {
+  background:
+    linear-gradient(
+      90deg,
+      rgba(127, 183, 255, 0.09),
+      rgba(127, 183, 255, 0.025)
+    );
+}
+
+/* Small session labels */
+
+.schedule-tag {
+  display: table;
+
+  margin-bottom: 0.4rem;
+  padding: 0.22rem 0.55rem;
+
+  border-radius: 999px;
+
+  background: rgba(127, 183, 255, 0.11);
+
+  border: 1px solid rgba(184, 214, 255, 0.18);
+
+  color: var(--accent-2);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+}
+
+.quantum-tag {
+  background: rgba(163, 125, 255, 0.13);
+  border-color: rgba(190, 165, 255, 0.22);
+  color: #d8c8ff;
+}
+
+/* Mobile */
+
+@media (max-width: 760px) {
+
+  .schedule-table-wrapper {
+    border-radius: 12px;
+  }
+
+  .schedule-table {
+    min-width: 780px;
+  }
+
+  .schedule-table th,
+  .schedule-table td {
+    padding: 0.85rem;
+  }
+}
