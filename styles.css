@@ -115,10 +115,12 @@ body {
 .nav-links a {
   color: #d8c8ff;
   text-decoration: none;
-  font-size: 0.95rem;
+  font-size: 0.90rem;
 
-  padding: 0.28rem 0.5rem;
+  padding: 0.28rem 0.4rem;
   border-radius: 8px;
+
+  white-space: nowrap;
 
   transition:
     color 0.2s ease,
