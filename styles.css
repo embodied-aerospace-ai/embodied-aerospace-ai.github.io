@@ -106,8 +106,10 @@ body {
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
+  flex-wrap: nowrap;
+  gap: 0.65rem;
+  align-items: center;
+  white-space: nowrap;
 }
 
 .nav-links a {
